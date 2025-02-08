@@ -1,0 +1,15 @@
+name: Multijob workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Build step
+      run: echo "Building the project"
+  deploy:
+    runs-on: ubuntu-latest
+    steps: 
+    - name: deploy step
+      run: echo "deploying the project"
