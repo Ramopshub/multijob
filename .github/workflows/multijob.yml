@@ -1,6 +1,9 @@
 name: Multijob workflow
 
-on: [push]
+on: 
+  push:
+   branches: main
+  workflow_dispatch:
 
 jobs:
   build:
